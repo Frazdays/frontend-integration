@@ -15,11 +15,18 @@
 
 }
 
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
 
-    h1 {
+    .grosse-icone {
         color: #0000FF;
     }
 
 }
 
+.persoclasse {
+    color: #DDDDDD;
+}
+
+.navbar {
+    background-color: red;
+}
