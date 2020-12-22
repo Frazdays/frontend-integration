@@ -1,0 +1,74 @@
+.mot-principal {
+    color: #FF0000;
+    background-color: #555555;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+    cursor: crosshair;
+    font-family: 'Courier New';
+    font-size: 12px;
+}
+
+.text-au-centre {
+    text-align: center;
+}
+
+.bordure-verte-arroundi {
+    border-width: 5px;
+    border-color: #00FF00;
+    border-style: solid;
+    border-top-right-radius: 50%;
+}
+
+.carte-anniversaire {
+    background-color: #0000FF;
+    padding: 20px;
+}
+
+.sous-titre-violet {
+    background-color: #FF00FF;
+}
+
+.panneau-1 {
+    width: 150px;
+    background-color: #DDDDDD;
+    float: left;
+}
+
+.panneau-2 {
+    width: 150px;
+    background-color: #FF0000;
+    float: left;
+}
+
+.panneau-3 {
+    width: 50px;
+    background-color: #db9119;
+    float: left;
+}
+
+p {
+    color: #00FF00;
+    padding: 20px;
+}
+
+div p {
+    color: #0000FF;
+}
+
+#mot-de-debut {
+    text-decoration: underline;
+    position: fixed;
+    top: 50px;
+    left: 300px;
+}
+
+
+
+
+
+.mot-vert *[type="text"] {
+    color: #FF00FF;
+}
+
