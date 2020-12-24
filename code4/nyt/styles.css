@@ -1,5 +1,56 @@
 /* Adding black borders to see what's going on with divs */
 div {
-    padding: 5px;
-    margin: 5px;
+    
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.dime {
+    height: 50px;
+}
+
+.bordered-line {
+    border-top: solid;
+    border-top-width: 1px;
+    padding-top: 10px;
+}
+
+.article-description {
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.sous-titre {
+    font-size: 12px;
+    color: #777;
+}
+
+.auteur {
+    font-size: 11px;
+    color: #BBB;
+}
+
+.text-en-rouge {
+    color: #FF0000;
+    text-decoration: underline;
 }

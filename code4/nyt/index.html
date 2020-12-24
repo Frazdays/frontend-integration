@@ -13,8 +13,14 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
+    <!-- Adding jQuery 3.5.1 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <!-- Adding our own stylesheet: styles.css -->
     <link href="styles.css" rel="stylesheet" />
+
+    <!-- Adding our own js script -->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,7 +31,7 @@
             </div>
             <div class="col">
                 <a href="#">U.S.</a>
-                <a href="#">International</a>
+                <a class="lien-inter">International</a>
                 <a href="#">Canada</a>
                 <a href="#">Español</a>
                 <a href="#">中文</a>
@@ -86,7 +92,7 @@
                     </svg> <span>13°C</span> <span>15°C</span> <span>12°C</span>
                 </div>
                 <div>
-                    <span>Nasdaq</span> <span>+0.50%</span> <svg width="5px" height="9px" viewBox="0 0 5 9"
+                    <span>Nasdaq</span> <span>+<span id="nasdaq-value">0.50</span>%</span> <svg width="5px" height="9px" viewBox="0 0 5 9"
                         class="css-4ky835">
                         <title>Group</title>
                         <defs></defs>
@@ -109,20 +115,20 @@
             <a>Politics</a>
             <a>N.Y.</a>
         </div>
-        <div class="row">
+        <div class="row bordered-line">
             <div class="col">
                 <a href="#">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-2">
                             <img alt="daily news now"
                                 src="https://static01.nyt.com/images/2017/01/29/podcasts/the-daily-album-art/the-daily-album-art-square320-v4.png"
-                                class="w-100" />
+                                class="dime" />
                         </div>
-                        <div class="col">
+                        <div class="col-10">
                             <h4>
                                 Listen to 'The Daily'
                             </h4>
-                            <div>
+                            <div class="article-description">
                                 The lives they live.
                             </div>
                         </div>
@@ -131,10 +137,10 @@
             </div>
             <div class="col">
                 <a href="#">
-                    <h4>
+                    <h4 class="book-to-change">
                         The Modern Love Podcast
                     </h4>
-                    <div>
+                    <div class="article-description">
                         A hard-earned holiday lesson about desire.
                     </div>
                 </a>
@@ -142,16 +148,16 @@
             <div class="col">
                 <a href="#">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-2">
                             <img alt="sway cover"
                                 src="https://static01.nyt.com/images/2020/09/03/podcasts/sway-album-art/sway-album-art-square320-v10.jpg"
-                                class="w-100" />
+                                class="dime" />
                         </div>
-                        <div class="col">
+                        <div class="col-10">
                             <h4>
                                 Listen to 'Sway'
                             </h4>
-                            <div>
+                            <div class="article-description">
                                 An “exit interview” with Ajay Banga, Mastercard’s chief executive.
                             </div>
                         </div>
@@ -161,10 +167,10 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-9">
                 <a href="#">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-4">
                             LIVE
                             <h2>Stimulus Payments May Start Arriving as Soon as Next Week</h2>
 
@@ -179,17 +185,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-8">
                             <img alt="Nancy Pelosi"
                                 src="https://static01.nyt.com/images/2020/12/21/us/politics/21dc-stimulus/merlin_181531440_47ce9f50-a101-4e23-a593-e8a02ec87361-jumbo.jpg?quality=90&auto=webp"
                                 class="w-100" />
-                            Speaker Nancy Pelosi on Monday in the Capitol. Congress approved the spending measure after
-                            months of gridlock and debate. Stefani Reynolds for The New York Times
+                            <span class="sous-titre">Speaker Nancy Pelosi on Monday in the Capitol. Congress approved the spending measure after
+                            months of gridlock and debate.</span> 
+                            <span class="auteur">Stefani Reynolds for The New York Times</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col">
+            <div class="col-3">
                 <div class="row">
                     <div class="col">
                         <a href="#">
